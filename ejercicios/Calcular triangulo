@@ -1,0 +1,33 @@
+cantTriangulos = 0
+while True:
+    print("1.- Calcular área triángulo.")
+    print("2.- Salir.")
+    try:
+        opc = int(input("Ingrese lo que desee hacer: "))
+        if opc == 1:
+            cantTriangulos = int(input("Ingrese la cantidad de triángulos a calcular: "))
+            for i in range(cantTriangulos):
+                while True:
+                    try:
+                       base = float(int("Ingrese la base del triángulo: "))
+                       break
+                    except ValueError:
+                        print("Debe ingresar valores numéricos válidos. ")  
+            
+                    while True:
+                        try:
+                            altura = float(int("Ingrese la altura del triángulo: "))
+                            break
+                        except ValueError:
+                            print("Debe ingresar valores numéricos válidos. ")  
+                                    
+                             
+        elif opc == 2:
+            print("Saliendo del programa.....")
+            break                          
+    except ValueError:
+        print("Debe ingresar una de las opciones.")                                               
+                
+            
+          
+    #base = int(intput("Ingrese")).replace(",",".")) Reemplaza la coma por un punto
